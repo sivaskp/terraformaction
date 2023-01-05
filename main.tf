@@ -1,8 +1,8 @@
 resource "aws_instance" "myec2" {
-  ami=""
+  ami="ami-0cca134ec43cf708f"
   instance_type="t2.micro"
   tags={
-  Name=""
+  Name="${var.project}-${var.environment}"
 
 
 }
